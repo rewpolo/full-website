@@ -49,10 +49,12 @@
   position: relative;
   z-index: 1;
   padding: 4.6875rem 0;
+  
 }
 
 .bg-header {
   background-image: url('/assets/bg-header-1.jpg');
+  padding: var(--size-150) 0;
 }
 
 .video-demo {
@@ -93,8 +95,13 @@
   flex: 1;
 }
 
+.why-me-wrapper .block-text {
+  padding-right: var(--size-100);
+}
+
 .block-text {
-  padding-right: var(--size-50);
+  padding-right: var(--size-150);
+  /* max-width: 550px; */
 }
 
 .block-text span {
@@ -158,6 +165,7 @@ span.bg-color-6 {background-image: linear-gradient(90deg, #a1ecff 0%, #7bbcff 10
 
 .video-demo .block-text h2, .video-demo .block-text p {
   color: var(--white);
+  margin: var(--size-50) 0;
 }
 
 .video-box {
@@ -201,7 +209,7 @@ span.bg-color-6 {background-image: linear-gradient(90deg, #a1ecff 0%, #7bbcff 10
 .price-card {
   background-color: var(--white);
   border-radius: 8px;
-  padding: var(--size-16);
+  padding: var(--size-40) var(--size-16);
 }
 
 .price-card .checked {color: var(--success);}
@@ -240,6 +248,7 @@ span.bg-color-6 {background-image: linear-gradient(90deg, #a1ecff 0%, #7bbcff 10
 
 .plan-btn-wrapper .btn {
   text-align: center;
+  width: 100%;
 }
 
 .testimonials {
