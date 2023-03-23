@@ -9,19 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/28a376b618.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="pageTop"></div>
 
-    <nav class="navbar nav">
+    <nav id="topNav" class="navbar nav">
      <div class="container">
-      <button class="navbar-toggle" aria-expanded="false" aria-controls="navBarDropdown">
+      <button class="navbar-toggler" aria-expanded="false" aria-controls="navBarDropdown">
         <span>&#9776;</span>
       </button>
       <a href="" class="navbar-brand">CodeRAD</a>
@@ -145,23 +144,33 @@
           <ul>
             <li>
               <span class="title">Community Support</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">Flexible Simple License</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Styled Components</span>
-              <span class="icon">&#10761;</span>
+              <span class="icon">
+                <i class="fas fa-times"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Header Variations</span>
-              <span class="icon">&#10761;</span>
+              <span class="icon">
+                <i class="fas fa-times"></i>
+              </span>
             </li>
             <li>
               <span class="title">Speedy Build Tooling</span>
-              <span class="icon">&#10761;</span>
+              <span class="icon">
+                <i class="fas fa-times"></i>
+              </span>
             </li>
           </ul>
         </div>
@@ -174,23 +183,33 @@
           <ul>
             <li>
               <span class="title">Community Support</span>
-              <span class="icon checked">&#x2713;</span>
+              <span class="icon checked">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">Flexible Simple License</span>
-              <span class="icon checked">&#x2713;</span>
+              <span class="icon checked">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Styled Components</span>
-              <span class="icon checked">&#x2713;</span>
+              <span class="icon checked">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Header Variations</span>
-              <span class="icon times">&#10761;</span>
+              <span class="icon times">
+                <i class="fas fa-times"></i>
+              </span>
             </li>
             <li>
               <span class="title">Speedy Build Tooling</span>
-              <span class="icon times">&#10761;</span>
+              <span class="icon times">
+                <i class="fas fa-times"></i>
+              </span>
             </li>
             <div class="plan-btn-wrapper">
               <a href="" class=" btn btn-primary">Get Started</a>
@@ -206,23 +225,33 @@
           <ul>
             <li>
               <span class="title">Community Support</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">Flexible Simple License</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Styled Components</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">100+ Header Variations</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
             <li>
               <span class="title">Speedy Build Tooling</span>
-              <span class="icon">&#x2713;</span>
+              <span class="icon">
+                <i class="fas fa-check"></i>
+              </span>
             </li>
           </ul>
         </div>
@@ -306,15 +335,15 @@
             <h5>Services</h5>
             <div class="services-wrapper">
               <h5>Mobile Apps</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
             </div>
             <div class="services-wrapper">
               <h5>Brand Identity</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="services-wrapper">
               <h5>Social Media</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="footer-col">
@@ -364,6 +393,26 @@
       <i class="fas fa-arrow-up"></i>
     </a>
 
-    <script src="https://kit.fontawesome.com/28a376b618.js" crossorigin="anonymous"></script>
+    <script >
+      const nav = document.getElementById('topNav');
+
+      window.onscroll = function() {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('sticky');
+        } else {
+          nav.classList.remove('sticky');
+        }
+      }
+
+
+      const navButton = document.querySelector('button[aria-expanded]');
+
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+
+      navButton.addEventListener('click', toggleNav);
+    </script>
   </body>
 </html>
